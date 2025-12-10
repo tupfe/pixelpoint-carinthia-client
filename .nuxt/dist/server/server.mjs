@@ -1,13 +1,13 @@
 import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance, inject, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineComponent, provide, h, ref, Suspense, Fragment, useSSRContext, defineAsyncComponent, unref, mergeProps, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, createApp } from "vue";
-import { $fetch } from "D:/Development/pixelpoint/carinthia-client/node_modules/ofetch/dist/node.mjs";
+import { $fetch } from "C:/Dev/carinthia-client/node_modules/ofetch/dist/node.mjs";
 import { baseURL } from "#internal/nuxt/paths";
-import { createHooks } from "D:/Development/pixelpoint/carinthia-client/node_modules/hookable/dist/index.mjs";
-import { getContext, executeAsync } from "D:/Development/pixelpoint/carinthia-client/node_modules/unctx/dist/index.mjs";
-import { sanitizeStatusCode, createError as createError$1 } from "D:/Development/pixelpoint/carinthia-client/node_modules/h3/dist/index.mjs";
+import { createHooks } from "C:/Dev/carinthia-client/node_modules/hookable/dist/index.mjs";
+import { getContext, executeAsync } from "C:/Dev/carinthia-client/node_modules/unctx/dist/index.mjs";
+import { sanitizeStatusCode, createError as createError$1 } from "C:/Dev/carinthia-client/node_modules/h3/dist/index.mjs";
 import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, RouterView } from "vue-router";
-import { toRouteMatcher, createRouter } from "D:/Development/pixelpoint/carinthia-client/node_modules/radix3/dist/index.mjs";
-import { defu } from "D:/Development/pixelpoint/carinthia-client/node_modules/defu/dist/defu.mjs";
-import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "D:/Development/pixelpoint/carinthia-client/node_modules/ufo/dist/index.mjs";
+import { toRouteMatcher, createRouter } from "C:/Dev/carinthia-client/node_modules/radix3/dist/index.mjs";
+import { defu } from "C:/Dev/carinthia-client/node_modules/defu/dist/defu.mjs";
+import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "C:/Dev/carinthia-client/node_modules/ufo/dist/index.mjs";
 import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
@@ -380,7 +380,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-BPRrogtt.js")
+    component: () => import("./_nuxt/index-u9mexPLb.js")
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -850,8 +850,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-CvLNVJz6.js"));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-DUzO_I0M.js"));
+    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-BXV3KPhT.js"));
+    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-CFGvjay8.js"));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));

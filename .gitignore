@@ -1,6 +1,5 @@
-++++node_modules
-.nitro
-.output
-.dist
+node_modules/
+.nitro/
+.output/
+dist/
 .env
-node_modules
